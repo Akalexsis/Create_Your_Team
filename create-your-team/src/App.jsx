@@ -31,9 +31,7 @@ function App() {
     <div className="App">
       {/* NAVIGATION BAR */}
       <nav>
-        <div className='title'>
-          <h1>Create Your Crew</h1>
-        </div>
+        <div className='title'> Create Your Crew </div>
         <div className='navigation'>
           <Link to='/'> Home </Link>
           <Link to='/gallery'> Crew Gallery </Link>
