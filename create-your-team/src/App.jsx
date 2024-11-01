@@ -31,7 +31,9 @@ function App() {
     <div className="App">
       {/* NAVIGATION BAR */}
       <nav>
-        <div className='title'> Create Your Crew </div>
+        <div> 
+          <h1> Create Your Crew </h1>
+        </div>
         <div className='navigation'>
           <Link to='/'> Home </Link>
           <Link to='/gallery'> Crew Gallery </Link>
@@ -39,7 +41,9 @@ function App() {
         </div>
       </nav>
       {/* where each component is displayed */}
-      {routes}
+      <div className="routes">
+        {routes}
+      </div>
     </div>
   )
 }

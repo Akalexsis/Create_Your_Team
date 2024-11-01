@@ -4,8 +4,7 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-image: url('./assets/space-bkg.jpg');
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -13,3 +12,90 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  font-weight: bold;
+  flex-grow: 1.5;
+  text-decoration: underline 2px solid black;
+}
+/* home page */
+.home {
+  text-align: center;
+}
+
+.home p {
+  text-align: left;
+  font-size: 1.125rem;
+  padding: 1rem;
+  margin-bottom: 3rem;
+}
+
+.home a {
+  text-align: center;
+  background-color: rgb(16, 110, 16);
+  color: white;
+  padding: 10px;
+  border: 0.1px solid rgb(16, 110, 16);
+  border-radius: 0.5rem;
+  font-size: 1.125rem;
+}
+
+
+
+/* CREATE CREW FORM */
+form {
+  background-color: brown;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin: 1rem;
+}
+
+/* GALLERY */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.crewmate {
+  background-color: blue;
+  /* 250px */
+  width: 15.625rem;
+  height: auto;
+  text-align: center;
+  border-radius: 0.5rem;
+  margin: 2rem;
+}
+
+.crewmate .info {
+  background-color: black;
+  padding: 0.5rem 1rem;
+  position: relative;
+  top: 15px;
+  left: 80px;
+  border-radius: 0.5rem;
+}
+
+.crewmate .info a:hover {
+  font-weight: bold;
+  flex-grow: 1.5;
+  text-decoration: underline 2px solid white;
+}
+
+.crewmate .edit {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.crewmate button {
+  padding: 0.2rem;
+}
