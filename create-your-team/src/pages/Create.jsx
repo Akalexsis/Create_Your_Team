@@ -3,7 +3,7 @@ import { useState } from "react";
 import supabase from "../Client";
 
 const Create = () => {
-    // default variable all the user input
+    // stores all the user input
     const [ userInput , setUserInput ] = useState(
         {
             name: '',

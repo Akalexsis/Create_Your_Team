@@ -41,8 +41,7 @@ const UpdateCrew = () => {
     return(
         <div>
             <Link to='/gallery'> Back </Link>
-            <div className="update">
-                <form className="new-crew">
+            <form className="new-crew">
                 <label htmlFor="name">Name: </label>
                 <input placeholder="name" type="text" name="name" value={userInput.name} onChange={handleUserInput} />
                 <label htmlFor="height">Height (in ft): </label>
@@ -51,7 +50,6 @@ const UpdateCrew = () => {
                 <input placeholder="color" type="text" name="color" value={userInput.color} onChange={handleUserInput} />
                 <button type="submit" onClick={onUpdate}> Update! </button>
             </form>
-            </div>
         </div>
     )
 }

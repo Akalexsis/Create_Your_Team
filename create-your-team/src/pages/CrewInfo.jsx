@@ -21,11 +21,11 @@ const CrewInfo =  () => {
     console.log(info)
 
     return(
-        <div className="crew-info">
+        <div className="crew-info-container">
             <Link to='/gallery'> Back </Link>
-            <div>
-                <h1>{info[0].name}</h1>
-                <p> {info[0].name} was created on {info[0].created_at}. This avatar is {info[0].color} and stands at an incredible {info[0].height} feet tall. </p>
+            <div className="crew-info">
+                <h1>{info[0]?.name}</h1>
+                <p> {info[0]?.name} was created on {info[0]?.created_at}. This avatar is {info[0]?.color} and stands at an incredible {info[0]?.height} feet tall. </p>
             </div>
             
         </div>

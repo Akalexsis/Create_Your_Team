@@ -44,7 +44,7 @@ const Gallery = () => {
                 {/* navigates to info page with unique ID */}
                 <Link to={`/update/${crewmate.id}`} state={crewmate} className="edit"> Edit </Link>
                 {/* must delete avatar with this specific id*/}
-                <button onClick={() => onDelete(crewmate.id, crewmate.name)}> delete </button>
+                <button onClick={() => onDelete(crewmate.id, crewmate.name)}> Delete </button>
             </div>
             )}
         </div>
