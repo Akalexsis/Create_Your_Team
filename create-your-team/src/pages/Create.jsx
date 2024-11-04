@@ -24,6 +24,7 @@ const Create = () => {
         // add new crewmate to database
         const { data, error } = await supabase.from('CrewMates').insert([{name: userInput.name, height: userInput.height, color: userInput.color}]).select();
         console.log(data)
+        console.log(error)
         // clear form
         setUserInput({ name: '', height: 0, color: '' })
     }

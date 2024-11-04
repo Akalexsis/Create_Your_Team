@@ -9,9 +9,8 @@ const Gallery = () => {
 
     // api call to get all crewmates from database
     const getCrewmates = async () => {
-        // select all crewmates from database
+        // get all crewmates from database and order by most recent character
         const { data, error } = await supabase.from('CrewMates').select().order('id', { ascending: false })
-        // console.log(crewmate)
         setCrewmates(data)
     }
     
@@ -23,7 +22,7 @@ const Gallery = () => {
         <div className="gallery">
             {/* for every crewmate, make a div element */}
             {crewmates && crewmates.map(( crewmate ) => 
-            <div id={crewmate.id} className="crewmate">
+            <div id={crewmate.id} className="crewmate" key={crewmate.id}>
                 {/* navigates to info page with unique ID */}
                 <Link to={`/info/${crewmate.id}`} className='info'> Info </Link>
                 <h1>{crewmate.name}</h1>
@@ -32,7 +31,7 @@ const Gallery = () => {
                 {/* navigates to info page with unique ID */}
                 <Link to="/create" className="edit"> Edit </Link>
                 {/* need to perform an action so button and not link */}
-                <button> Delete </button>
+                <Link to={`/delete/${crewmate.id}`}> Delete </Link> 
             </div>
             )}
         </div>

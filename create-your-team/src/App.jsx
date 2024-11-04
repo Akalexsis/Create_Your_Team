@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import Gallery from './pages/Gallery';
 import Create from './pages/Create';
 import CrewInfo from './pages/CrewInfo';
+import DeleteCrew from './pages/DeleteCrew';
 
 
 function App() {
@@ -25,6 +26,10 @@ function App() {
     {
       path: '/info/:crewID',
       element: <CrewInfo />
+    },
+    {
+      path: '/delete/:crewID',
+      element: <DeleteCrew />
     }
 ]);
   return (
