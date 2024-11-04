@@ -6,7 +6,7 @@ import Gallery from './pages/Gallery';
 import Create from './pages/Create';
 import CrewInfo from './pages/CrewInfo';
 import DeleteCrew from './pages/DeleteCrew';
-
+import UpdateCrew from './pages/UpdateCrew';
 
 function App() {
 
@@ -30,6 +30,10 @@ function App() {
     {
       path: '/delete/:crewID',
       element: <DeleteCrew />
+    },
+    {
+      path: '/update/:crewID',
+      element: <UpdateCrew/>
     }
 ]);
   return (
@@ -42,6 +46,7 @@ function App() {
         <div className='navigation'>
           <Link to='/'> Home </Link>
           <Link to='/gallery'> Crew Gallery </Link>
+          {/* since creating, making new crewmate */}
           <Link to='/create'> New Crewmate </Link>
         </div>
       </nav>

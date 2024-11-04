@@ -8,7 +8,7 @@ const CrewInfo =  () => {
     const { crewID } = useParams()
 
     // stores info on the crewmate
-    const [ info, setInfo ] = useState()
+    const [ info, setInfo ] = useState([])
 
      // api call to get selected crewmate from database
      const getCrewmate = async () => {

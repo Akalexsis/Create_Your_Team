@@ -4,10 +4,14 @@ import { useEffect } from "react";
 import { Link, useParams } from "react-router-dom";
 
 const DeleteCrew = () => {
+    // selects the avatar's unique  ID
+    const { crewID } = useParams()
+    console.log(crewID)
+
     return(
         <div className="delete">
             <Link to='/gallery'> Back </Link>
-            Delete
+            Delete {crewID}
         </div>
     )
 }
